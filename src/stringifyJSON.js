@@ -4,7 +4,6 @@
 // but you don't so you're going to write it from scratch:
 
 var stringifyJSON = function(obj) {
-	console.log("Object: " + obj + " TypeOf: " + typeof(obj));
   // your code goes here
   	if (typeof(obj) == "string") {
   		return '"' + obj + '"';
@@ -26,7 +25,7 @@ var stringifyJSON = function(obj) {
   		}
 
   		var keys = Object.keys(obj);
-  		console.log("Keys: " + keys);
+
   		if (keys.length == 0) {
   			if ((""+obj) == "[object Object]") {
   				return "{}";
